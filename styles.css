@@ -1,0 +1,584 @@
+/* Grundlegende Stile */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Standard-Schriftstärke */
+    color: #333; /* Standard-Textfarbe */
+}
+
+/* Überschriften */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; /* Fett für Überschriften */
+    margin: 0;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+/* Links */
+a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Buttons */
+button, .hero-button, .footer-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; /* Mittlere Schriftstärke für Buttons */
+}
+
+/* Sticky Header */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 0; /* Etwas Padding für den Header */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo img {
+    height: 50px; /* Höhe anpassen */
+    width: auto; /* Breite automatisch anpassen, um das Seitenverhältnis beizubehalten */
+}
+
+/* Navigation (Mitte) */
+.nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+/* Kontakt (rechts) */
+.contact-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 16px;
+    background-color:#22B7FF;
+}
+
+.contact-link a:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Großes Bild (Hero-Bild) */
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Höhe anpassen */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Bild wird skaliert, um den Container zu füllen */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Overlay für bessere Lesbarkeit */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dunkler Overlay */
+    z-index: 2;
+}
+
+/* Inhalt auf dem Hero-Bild */
+.hero-content {
+    position: relative;
+    z-index: 3;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin: 10px 0 20px;
+}
+
+/* Stylischer Button */
+.hero-button {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    background-color: #22B7FF
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    background-color: #333; /* Anthrazit */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 20px;
+}
+
+.footer-left {
+    text-align: left;
+    max-width: 600px;
+}
+
+.footer-left h3 {
+    font-size: 24px;
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+
+.footer-left p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.footer-right .footer-button {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    background-color:#22B7FF;
+    transition: background-color 0.3s;
+}
+
+.footer-right .footer-button:hover {
+    background-color: #0056b3;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-top: 1px solid #555;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: red;
+}
+
+.legal-links {
+    display: flex;
+    gap: 20px;
+}
+
+.legal-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.legal-links a:hover {
+    color: #007BFF;
+}
+
+.phone-number {
+    text-align: right;
+}
+
+.phone-number p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.phone-number a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.phone-number a:hover {
+    color: #007BFF;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Neues Segment: Kontakt und Terminbuchung */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-button {
+    background-color: #22B7F2;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.contact-button:hover {
+    background-color: #1A8BBF;
+}
+
+/* Pop-up für Terminbuchung */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+}
+
+.popup-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.popup-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.popup-content label {
+    font-size: 16px;
+    color: #333;
+}
+
+.popup-content input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup-content button[type="submit"] {
+    background-color: #22B7F2;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.popup-content button[type="submit"]:hover {
+    background-color: #1A8BBF;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-button:hover {
+    color: #22B7F2;
+}
+
+.testimonials {
+    background-color: #D3F1FF;
+    padding: 40px 20px;
+    text-align: center;
+
+
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: f9f9f9;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: left;
+}
+
+.card p {
+    font-size: 16px;
+    color: #333;
+}
+
+.card span {
+    font-size: 14px;
+    color: #22B7FF;
+    font-weight: 500;
+}
+
+/* Styles for top information header */
+.top-info-header {
+    background-color: #f8f9fa;
+    padding: 8px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.top-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.top-info-segment {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+}
+
+.top-info-segment i {
+    color: #22B7FF;
+    font-size: 14px;
+}
+
+.testimonials-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-cards {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    gap: 20px;
+    transition: transform 0.3s ease;
+}
+
+.carousel-arrow {
+    background-color: rgba(34, 183, 255, 0.2);
+    color: #22B7FF;
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.left-arrow {
+    left: -50px;
+}
+
+.right-arrow {
+    right: -50px;
+}
+
+.carousel-arrow:hover {
+    background-color: rgba(34, 183, 255, 0.4);
+}
+
+/*Dienstleistung.html*/
+
+/* Dienstleistungs-Sektion */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.service-card {
+    background: white;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    color: #22B7FF;
+    margin-bottom: 25px;
+}
+
+.service-card h3 {
+    color: #333;
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    min-height: 60px;
+}
+
+.service-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #22B7FF;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    border: 2px solid transparent;
+}
+
+.service-button:hover {
+    background-color: #1A8BBF;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        margin: 0 15px;
+    }
+}
+
+.service-card img.windows_logo{
+
+    width: 100px;
+}

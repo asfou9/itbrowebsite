@@ -1,0 +1,25 @@
+Bitte füge einen Footer in Anthrazit hinzu. 
+
+Es sollen zwei Segmente im oberen Teil des HEaders sein. Im ersten Segment (links) ist folgender Text zu sehen
+
+Brauchen Sie Unterstützung?
+Wir sind für Sie da!
+
+Ihr Compotech-Team vor Ort steht Ihnen mit Rat und Tat zur Seite. Klicken Sie auf „Kontakt aufnehmen“ und Nehmen Sie direkt Kontakt auf, um Ihre Fragen zu klären!
+
+Im Zweiten Segment rechts ist ein Button zum Kontakt aufnehmen, der direkt auf eine Seite zum Kontakt aufnehmen anzeigt. 
+
+
+
+Weiter unten im Header sind Instagram, Facebook, Youtube, Twitter Buttons zu sehen und geordnet in einem Segment 
+
+-Über uns
+-Datenschutz
+-Sitemap
+-Impressum
+
+Und eine Telefonnummer um direkt zu kontaktieren mit dem Text "Rufen Sie uns direkt an!" 015209237494
+
+Ganz unten ist folgender Text: 
+
+Compotech – Ein Service der Compotech CoKG – Alle Rechte vorbehalten

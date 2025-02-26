@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Website</title>
+    <!-- Google Fonts: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome für Social-Media-Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Add this right before the sticky-header in the HTML -->
+<div class="top-info-header">
+    <div class="top-info-container">
+        <div class="top-info-segment">
+            <i class="fas fa-phone"></i>
+            <span>+49 0152 09237494</span>
+        </div>
+        <div class="top-info-segment">
+            <i class="fas fa-envelope"></i>
+            <span>info@itbro.com</span>
+        </div>
+        <div class="top-info-segment">
+            <i class="fas fa-clock"></i>
+            <span>09:00 - 17:00</span>
+        </div>
+    </div>
+</div>
+    <header class="sticky-header">
+        <div class="header-content">
+            <!-- Logo (links) -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/itbro_logo_2_final-usb.png" alt="IT-Bro Logo">
+                </a>
+            </div>
+
+            <!-- Navigation (Mitte) -->
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="dienstleistungen.html">Dienstleistungen</a></li>
+                    <li><a href="#ueber-uns">Über Uns</a></li>
+                </ul>
+            </nav>
+
+            <!-- Kontakt (rechts) -->
+            <div class="contact-link">
+                <a href="#kontakt">Kontakt</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Großes Bild mit Willkommenstext und Button -->
+    <div class="hero-image">
+        <div class="hero-overlay"></div> <!-- Overlay für bessere Lesbarkeit -->
+        <div class="hero-content">
+            <h1>Ihre IT? Läuft bei uns!</h1>
+            <p>Auch Ihre IT soll einfach, sicher und stabil laufen? Mit den Managed Services von Compotech CoKG machen wir das möglich.</p>
+            <a href="#kontakt" class="hero-button">Kontaktieren Sie Uns</a>
+        </div>
+        <img src="img/hintergrund_bild.jpg" alt="Startbild">
+    </div>
+
+
+    <!-- Pop-up für Terminbuchung -->
+    <div class="popup-overlay" id="popup-overlay">
+        <div class="popup-content">
+            <h2>Termin buchen</h2>
+            <form id="appointment-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="date">Datum:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Uhrzeit:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit">Termin anfragen</button>
+            </form>
+            <button class="close-button" id="close-popup">&times;</button>
+        </div>
+    </div>
+
+
+
+
+
+<section class="testimonials">
+    <h2>Was unsere Kunden sagen</h2>
+    <div class="testimonials-container">
+        <button class="carousel-arrow left-arrow">&lt;</button>
+        <div class="testimonial-cards">
+            <div class="card">
+                <p>"Compotech hat unsere IT-Probleme gelöst. Sehr professionell!"</p>
+                <span>- Max Mustermann</span>
+            </div>
+            <div class="card">
+                <p>"Super Service und schnelle Hilfe. Immer wieder gerne!"</p>
+                <span>- Erika Musterfrau</span>
+            </div>
+            <div class="card">
+                <p>"Super Service und schnelle Hilfe. Immer wieder gerne!"</p>
+                <span>- Erika Musterfrau</span>
+            </div>
+            <div class="card">
+                <p>"Super Service und schnelle Hilfe. Immer wieder gerne!"</p>
+                <span>- Erika Musterfrau</span>
+            </div>
+            <div class="card">
+                <p>"Super Service und schnelle Hilfe. Immer wieder gerne!"</p>
+                <span>- Erika Musterfrau</span>
+            </div>
+
+
+        </div>
+        <button class="carousel-arrow right-arrow">&gt;</button>
+    </div>
+</section>
+
+<!-- Ensure this is right before the footer -->
+</main>
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Oberer Teil des Footers -->
+        <div class="footer-top">
+            <div class="footer-left">
+                <h3>Brauchen Sie Unterstützung?</h3>
+                <p>Wir sind für Sie da!</p>
+                <p>Ihr Compotech-Team vor Ort steht Ihnen mit Rat und Tat zur Seite. Klicken Sie auf „Kontakt aufnehmen“ und nehmen Sie direkt Kontakt auf, um Ihre Fragen zu klären!</p>
+            </div>
+            <div class="footer-right">
+                <a href="#kontakt" class="footer-button">Kontakt aufnehmen</a>
+            </div>
+        </div>
+
+        <!-- Unterer Teil des Footers -->
+        <div class="footer-bottom">
+            <!-- Social-Media-Links -->
+            <div class="social-media">
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <!-- Rechtliche Links -->
+            <div class="legal-links">
+                <a href="#ueber-uns">Über uns</a>
+                <a href="#datenschutz">Datenschutz</a>
+                <a href="#sitemap">Sitemap</a>
+                <a href="#impressum">Impressum</a>
+            </div>
+
+            <!-- Telefonnummer -->
+            <div class="phone-number">
+                <p>Rufen Sie uns direkt an!</p>
+                <a href="tel:015209237494">0152 0923 7494</a>
+            </div>
+        </div>
+
+        <!-- Copyright-Text -->
+        <div class="copyright">
+            <p>Compotech – Ein Service der Compotech CoKG – Alle Rechte vorbehalten</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript für das Pop-up -->
+    <script>
+        // Pop-up öffnen
+        document.getElementById('book-appointment').addEventListener('click', function() {
+            document.getElementById('popup-overlay').style.display = 'flex';
+        });
+
+        // Pop-up schließen
+        document.getElementById('close-popup').addEventListener('click', function() {
+            document.getElementById('popup-overlay').style.display = 'none';
+        });
+
+        // Formular absenden (nur Demo)
+        document.getElementById('appointment-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Vielen Dank! Wir werden uns bald bei Ihnen melden.');
+            document.getElementById('popup-overlay').style.display = 'none';
+        });
+    </script>
+
+<script>document.addEventListener('DOMContentLoaded', function() {
+    const testimonialCards = document.querySelector('.testimonial-cards');
+    const leftArrow = document.querySelector('.left-arrow');
+    const rightArrow = document.querySelector('.right-arrow');
+    let currentIndex = 0;
+
+    rightArrow.addEventListener('click', () => {
+        if (currentIndex < testimonialCards.children.length - 3) {
+            currentIndex++;
+            updateCarousel();
+        }
+    });
+
+    leftArrow.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+        }
+    });
+
+    function updateCarousel() {
+        const cardWidth = testimonialCards.children[0].offsetWidth + 20; // width + gap
+        testimonialCards.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
+
+});</script>
+</body>
+</html>
